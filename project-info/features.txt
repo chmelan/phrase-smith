@@ -47,12 +47,11 @@ Settings menu
         Angry
         Happy
         Exclamation
-        Sad
         Insult
 
 
 List of phrases 
-    Each phrase needs to have a phrase and a set of tags => see sample-phrases.json
+    Each phrase needs to have a phrase and a set of tags => see ./src/samplePhrases.js
     How to gather phrases   
         1. manual entry 
         2. crowdsource friends for thier favorite quotes
