@@ -8,7 +8,7 @@ class App extends React.Component {
     super(props);
     this.state = {
       phrases: samplePhrases,
-      currentPhrase: 'Your mother was a orc!',
+      currentPhrase: samplePhrases[0],
     };
   }
   updateCurrentPhrase = (newPhrase) => {

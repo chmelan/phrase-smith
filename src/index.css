@@ -4,3 +4,7 @@ body {
 .phraseGeneratorContainer {
   border: 1px solid black;
 }
+.phraseCard {
+  width: 200px;
+  border: 1px solid black;
+}
