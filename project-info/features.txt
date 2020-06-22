@@ -42,6 +42,13 @@ Settings menu
 
     Weapon(optional)
         prompt for weapon => stored in state
+    
+    Context(optional)
+        Angry
+        Happy
+        Exclamation
+        Sad
+        Insult
 
 
 List of phrases 
