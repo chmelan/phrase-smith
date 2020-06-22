@@ -1,4 +1,4 @@
-const phrases = [
+const samplePhrases = [
   {
     phrase: 'By my beard!',
     tags: ['dwarf', 'warrior', 'barbarian'],
@@ -25,4 +25,4 @@ const phrases = [
   },
 ];
 
-export default phrases;
+export default samplePhrases;

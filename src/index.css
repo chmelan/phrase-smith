@@ -1,3 +1,6 @@
 body {
   background-color: #fcbf49;
 }
+.phraseGeneratorContainer {
+  border: 1px solid black;
+}
