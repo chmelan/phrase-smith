@@ -1,7 +1,12 @@
 function getRandomItemFromArray(array) {
-  return array[Math.floor(Math.random() * (array.length - 1))];
+  return array[Math.floor(Math.random() * array.length)];
 }
 function capitalize(string) {
   return string.charAt(0).toUpperCase() + string.slice(1);
 }
-export { getRandomItemFromArray, capitalize };
+function getFilteredPhrases(phrases, tags) {
+  return phrases.filter((phrase) =>
+    phrase.tags.some((tag) => tags.includes(tag))
+  );
+}
+export { getRandomItemFromArray, capitalize, getFilteredPhrases };

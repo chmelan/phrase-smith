@@ -1,10 +1,11 @@
 import React from 'react';
-import { getRandomItemFromArray } from '../helpers.js';
+import { getRandomItemFromArray, getFilteredPhrases } from '../helpers.js';
 import PhraseCard from './PhraseCard';
 
 function PhraseGenerator(props) {
   const handleClick = () => {
-    const newPhrase = getRandomItemFromArray(props.phrases);
+    const filteredPhrases = getFilteredPhrases(props.phrases, props.filterTags);
+    const newPhrase = getRandomItemFromArray(filteredPhrases);
     props.updateCurrentPhrase(newPhrase);
   };
   return (

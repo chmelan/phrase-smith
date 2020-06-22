@@ -9,6 +9,7 @@ class App extends React.Component {
     this.state = {
       phrases: samplePhrases,
       currentPhrase: samplePhrases[0],
+      filterTags: ['dwarf', 'halfling'],
     };
   }
   updateCurrentPhrase = (newPhrase) => {
@@ -21,6 +22,7 @@ class App extends React.Component {
           phrases={this.state.phrases}
           currentPhrase={this.state.currentPhrase}
           updateCurrentPhrase={this.updateCurrentPhrase}
+          filterTags={this.state.filterTags}
         />
       </div>
     );
