@@ -1,0 +1,82 @@
+get random quote
+    allows users to filter quotes bases on optional tags, and recieve a random quote.  
+    *I would like to make the quote search feel more tactile*
+        This could mean making an animation that adds 'weight' to the random quote selection
+
+
+Settings menu
+    class
+        Barbarian
+        Bard
+        Cleric
+        Druid
+        Fighter
+        Monk
+        Paladin
+        Ranger
+        Rogue
+        Sorcerer
+        Warlock
+        Wizard
+        All
+
+        OR
+        go non D and D specific
+        Warrior
+        Wizard
+        Rogue
+        All
+        Cleric
+            combining the cleric tag and warrior tag is similar to using the Paladin tag
+
+    Race
+        Dwarf
+        Human
+        Elf
+        Halfling
+          All
+        Other 
+ 
+    God(optional)
+        Prompt for god => stored in state 
+
+    Weapon(optional)
+        prompt for weapon => stored in state
+
+
+List of phrases 
+    Each phrase needs to have a phrase and a set of tags => see sample-phrases.json
+    How to gather phrases   
+        1. manual entry 
+        2. crowdsource friends for thier favorite quotes
+        3. gather LOTR quotes from the Lord of the Rings API
+        4. Search online for popular fantasy quotes
+        5. Ask reddit for input
+        6. Pull requests on the github repo
+    Concerns
+        1. copywright/plagerism => a solution could be to add a bibliography to the app in an info page
+
+Later features
+
+    generate custom catchphrase 
+        generates a custom catchphrase by using an array of templates
+            example
+            [
+            "By my {noun}", 
+            "Taste my {weapon}",
+            ]
+
+    Player profiles
+        Allow users to store presets, to quickly access settings for different characters
+
+    Favorite quotes
+        Allows players to save thier favorite quotes in an array for easy access
+    Submit quotes
+        Allows users to submit quotes to phrase-smith
+
+    Quote List 
+        Shows all quotes
+        Allows users to filter by  
+            class
+            Race
+            favorite 
