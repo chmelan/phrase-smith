@@ -1,5 +1,5 @@
 import React from 'react';
-import getRandomItemFromArray from '../helpers.js';
+import { getRandomItemFromArray } from '../helpers.js';
 import PhraseCard from './PhraseCard';
 
 function PhraseGenerator(props) {

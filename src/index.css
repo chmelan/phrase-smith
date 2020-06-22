@@ -1,10 +1,17 @@
 body {
   background-color: #fcbf49;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .phraseGeneratorContainer {
-  border: 1px solid black;
+  border: 5px solid black;
+  width: 500px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 .phraseCard {
-  width: 200px;
   border: 1px solid black;
 }
