@@ -34,7 +34,7 @@ Settings menu
         Human
         Elf
         Halfling
-          All
+        All
         Other 
  
     God(optional)

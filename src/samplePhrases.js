@@ -1,15 +1,15 @@
 const samplePhrases = [
   {
     phrase: 'By my beard!',
-    tags: ['dwarf', 'warrior', 'barbarian'],
+    tags: ['dwarf', 'fighter', 'barbarian'],
   },
   {
     phrase: 'For honor!',
-    tags: ['dwarf', 'warrior', 'paladin', 'human'],
+    tags: ['dwarf', 'fighter', 'paladin', 'human'],
   },
   {
     phrase: 'Your mother was a orc',
-    tags: ['dwarf', 'warrior', 'paladin'],
+    tags: ['dwarf', 'fighter', 'paladin'],
   },
   {
     phrase: 'May the trees guide you',

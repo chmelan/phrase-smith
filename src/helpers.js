@@ -5,8 +5,13 @@ function capitalize(string) {
   return string.charAt(0).toUpperCase() + string.slice(1);
 }
 function getFilteredPhrases(phrases, tags) {
-  return phrases.filter((phrase) =>
-    phrase.tags.some((tag) => tags.includes(tag))
-  );
+  //check if any tags are selected
+  if (tags.length > 0) {
+    return phrases.filter((phrase) =>
+      phrase.tags.some((tag) => tags.includes(tag))
+    );
+  }
+  //return all phrases if no filters are specified
+  return phrases;
 }
 export { getRandomItemFromArray, capitalize, getFilteredPhrases };
