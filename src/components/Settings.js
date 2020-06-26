@@ -47,7 +47,6 @@ function Settings(props) {
           </button>
         ))}
       </ul>
-      <h3>{props.filterTags}</h3>
     </div>
   );
 }
