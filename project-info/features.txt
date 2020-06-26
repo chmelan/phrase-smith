@@ -75,6 +75,7 @@ Later features
     Player profiles
         Allow users to store presets, to quickly access settings for different characters
 
+
     Favorite quotes
         Allows players to save thier favorite quotes in an array for easy access
     Submit quotes
@@ -86,3 +87,12 @@ Later features
             class
             Race
             favorite 
+
+    Ability to do a selective filter
+        e.g. must be a 'Dwarf' and a 'Barbarian'
+
+    Icons corresponding to each class/race next to each quote
+
+    
+
+    
