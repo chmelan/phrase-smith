@@ -18,10 +18,7 @@ function NavBar(props) {
         toggleLeftNavOpen={props.toggleLeftNavOpen}
       />
       <h1>PHRASE-SMITH</h1>
-      <SettingsToggleButton
-        position="right"
-        toggleNavOpen={props.toggleLeftNavOpen}
-      />
+      <SettingsToggleButton position="right" />
     </nav>
   );
 }
