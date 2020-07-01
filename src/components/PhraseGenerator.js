@@ -10,7 +10,7 @@ function PhraseGenerator(props) {
   };
   return (
     <div className="phraseGeneratorContainer">
-      <h1>Phrase Generator</h1>
+      <h2>Phrase Generator</h2>
       <PhraseCard currentPhrase={props.currentPhrase} />
       <button onClick={handleClick}>Give me a phrase!</button>
     </div>

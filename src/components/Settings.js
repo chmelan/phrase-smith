@@ -14,8 +14,18 @@ function Settings(props) {
     props.updateFilterTags(newTags);
   };
   return (
-    <div>
-      <ul>
+    <div className={props.leftNavOpen ? 'settings settingsOpen' : 'settings'}>
+      <button
+        className={
+          props.leftNavOpen ? 'closeButton closeButtonActive' : 'closeButton'
+        }
+        onClick={props.toggleLeftNavOpen}
+      >
+        &times;
+      </button>
+      <h2>Filters</h2>
+      <h3>Classes</h3>
+      <ul className="filterBtnContainer">
         {props.classTags.map((tag) => (
           <button
             key={tag}
@@ -31,7 +41,8 @@ function Settings(props) {
           </button>
         ))}
       </ul>
-      <ul>
+      <h3>Races</h3>
+      <ul className="filterBtnContainer">
         {props.raceTags.map((tag) => (
           <button
             key={tag}

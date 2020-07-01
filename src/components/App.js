@@ -1,13 +1,16 @@
 import React from 'react';
+import 'normalize.css';
 import '../index.css';
 import samplePhrases from '../samplePhrases';
 import PhraseGenerator from './PhraseGenerator';
+import NavBar from './NavBar';
 import Settings from './Settings';
 
 class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
+      leftNavOpen: true,
       phrases: samplePhrases,
       currentPhrase: samplePhrases[0],
       filterTags: ['wizard', 'fighter'],
@@ -34,22 +37,28 @@ class App extends React.Component {
   updateFilterTags = (updatedFilterTags) => {
     this.setState({ filterTags: updatedFilterTags });
   };
+  toggleLeftNavOpen = () => {
+    const toggledState = this.state.leftNavOpen ? false : true;
+    this.setState({ leftNavOpen: toggledState });
+  };
   render() {
     return (
-      <div>
+      <React.Fragment>
+        <NavBar
+          classTags={this.state.classTags}
+          raceTags={this.state.raceTags}
+          filterTags={this.state.filterTags}
+          leftNavOpen={this.state.leftNavOpen}
+          updateFilterTags={this.updateFilterTags}
+          toggleLeftNavOpen={this.toggleLeftNavOpen}
+        />
         <PhraseGenerator
           phrases={this.state.phrases}
           currentPhrase={this.state.currentPhrase}
           updateCurrentPhrase={this.updateCurrentPhrase}
           filterTags={this.state.filterTags}
         />
-        <Settings
-          classTags={this.state.classTags}
-          raceTags={this.state.raceTags}
-          filterTags={this.state.filterTags}
-          updateFilterTags={this.updateFilterTags}
-        />
-      </div>
+      </React.Fragment>
     );
   }
 }

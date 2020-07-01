@@ -93,6 +93,16 @@ Later features
 
     Icons corresponding to each class/race next to each quote
 
-    
+    phrases
+        Goals
+        First Version
+            At least 10 phrases per search filter
+        Second Version
+            At least 20 phrases per search filter
+
+    Settings
+        Clear All button
+        Add Add button
+            concerns => this could be redundant based on how getFilteredPhrases in helpers.js is written
 
     
