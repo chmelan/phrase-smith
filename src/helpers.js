@@ -1,7 +1,7 @@
 function getRandomItemFromArray(array) {
   return array[Math.floor(Math.random() * array.length)];
 }
-function capitalize(string) {
+function capitalizeFirstLetter(string) {
   return string.charAt(0).toUpperCase() + string.slice(1);
 }
 function getFilteredPhrases(phrases, tags) {
@@ -14,4 +14,4 @@ function getFilteredPhrases(phrases, tags) {
   //return all phrases if no filters are specified
   return phrases;
 }
-export { getRandomItemFromArray, capitalize, getFilteredPhrases };
+export { getRandomItemFromArray, capitalizeFirstLetter, getFilteredPhrases };

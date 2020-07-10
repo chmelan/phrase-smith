@@ -1,57 +1,134 @@
-get random quote
+get random phrase
     allows users to filter quotes bases on optional tags, and recieve a random quote.  
     *I would like to make the quote search feel more tactile*
         This could mean making an animation that adds 'weight' to the random quote selection
 
+Example Phrase
+    {
+    id: '01ECFPP6QVMK8R4SWC6P0Y9BFJ',
+    phrase: 'By my beard!',
+    classes: ['Fighter', 'Barbarian'],
+    races: ['Dwarf'],
+    characters: ['Thibbledorf Gutbuster', 'Jenny Craghammer', 'Dronthir DarkForge', 'Gideon Godwin' ],
+    context: ['Shout'],
+  },
 
-Settings menu
-    class
-        Barbarian
-        Bard
-        Cleric
-        Druid
-        Fighter
-        Monk
-        Paladin
-        Ranger
-        Rogue
-        Sorcerer
-        Warlock
-        Wizard
-        All
+Filter Menu
+    Character Mode
+        Users can only select one Character at a time
+            Filters phrases to only show phrases that match the character tag
+        Users can select any number of Contexts  
+            Filters phrases to only show phrases that match any of the selected contexts
 
-        OR
-        go non D and D specific
-        Warrior
-        Wizard
-        Rogue
-        All
-        Cleric
-            combining the cleric tag and warrior tag is similar to using the Paladin tag
+         Contexts
+                Insult 
+                Compliment
+                Shout
+                Comment
 
-    Race
-        Dwarf
-        Human
-        Elf
-        Halfling
-        All
-        Other 
- 
-    God(optional)
-        Prompt for god => stored in state 
 
-    Weapon(optional)
-        prompt for weapon => stored in state
-    
-    Context(optional)
-        Angry
-        Happy
-        Exclamation
-        Insult
+        Characters
+             1. Human fighter: 
+                Gideon Godwin: (honorable fighter with a chisled jaw, and a huge greatsword. He fights for the common folk, and has generic commentary)
+            2. Human Paladin:  
+                Sir Laurenth ( a holy night who is steadfast in his resolve with God. Modeled after Strum Brightblade from the Dragonlance series )
+            3. Human monk: 
+                Timon of th Grey Path (does not wish to do harm unless absolutely necessary, the embodiment of true neutral alignment) 
+
+            4. Elf Druid: Tessa Silvermoon 
+                Sylvanath T'Thasalor ( An unaging melodramatic dwarf who reveres nature's cycle)
+            5. Elf Ranger: 
+                Andwen DarkBow (edgy lone ranger type. Hates monsters. Family was all killed off.  Dripping with edge)
+            6. Elf Wizard: 
+                Erindriel Uriberos (A great old wizard with a lust for knowledge. Sees himself as smarter than the rest of the world. read: arrogant)
+
+            7. Dwarf cleric:  
+                Jenny Craghammer (a stoic dwarf who reveres the forge god.  She is a champion for the common people, and smites the unholy with righteous fury)
+            8. Dwarf Barbarian:
+                Thibbledorf Gutbuster (a dwarf battlerager who has only 2 ideals: carnage and loyalty)
+            9. Dwarf Warlock:
+                Dronthir DarkForge(gets his powers from a demon of greed this makes Dronthir lust for gold and jewels ) 
+
+            10. Halfling Sorcerer: 
+                Johnny TiggleBottom (a wild magic Sorcerer who broke an ancient urn.  He is very all over the place, and not confident)
+            11. Halfling Bard:
+                Elizabeth Underburrough ( she plays a mean fiddle, and sees the world through a very optimistic lens)
+            12. Halfling Rogue
+                Arlan GlitterFingers (Best thief in his area. Loves a good challenge. Steals for the fun of it)
+    Traditional Mode
+        Allows users to select one class and one race.
+            Filters for quotes that match either the class or race
+        Users can select any number of Contexts  
+            Filters phrases to only show phrases that match any of the selected contexts
+
+         Contexts
+                Insult 
+                Compliment
+                Shout
+                Comment
+
+        Class
+            Barbarian
+            Bard
+            Cleric
+            Druid
+            Fighter
+            Monk
+            Paladin
+            Ranger
+            Rogue
+            Sorcerer
+            Warlock
+            Wizard
+
+        Race
+            Dwarf
+            Human
+            Elf
+            Halfling
+    Dungeon Master Mode
+        Users can select any number of Classes or Races
+            Filter Options
+                Any
+                Barbarian/Druid/Dwarf/Elf returns any phrases that match at least one of the selected tags
+                All
+                Barbarian/Druid/Dwarf/Elf returns only phrases that match all of the selected tags 
+        
+        Users can select any number of Contexts  
+            Filters phrases to only show phrases that match any of the selected contexts
+
+        Class
+            Barbarian
+            Bard
+            Cleric
+            Druid
+            Fighter
+            Monk
+            Paladin
+            Ranger
+            Rogue
+            Sorcerer
+            Warlock
+            Wizard
+
+        Race
+            Dwarf
+            Human
+            Elf
+            Halfling
+
+        Contexts
+            Insult 
+            Compliment
+            Shout
+            Comment
+
+
 
 
 List of phrases 
     Each phrase needs to have a phrase and a set of tags => see ./src/samplePhrases.js
+    Phrases should be gender neutral in both speaker and subject, to allow for more re-use
     How to gather phrases   
         1. manual entry 
         2. crowdsource friends for thier favorite quotes
@@ -62,6 +139,63 @@ List of phrases
     Concerns
         1. copywright/plagerism => a solution could be to add a bibliography to the app in an info page
 
+    Optional means of gathering quotes
+        1. Look at the most common D&D class/race combos e.g. human fighter or elf Wizard
+        2. Create a personality for each common class/race combo
+        3. Write a set of quotes for each class/race combo
+        4. Add additional tags for other classes/races if they filter
+
+        Top classes source: https://fivethirtyeight.com/features/is-your-dd-character-rare/
+            1. Human Fighter
+            2. Human Rogue
+            3. Human Wizard
+            4. Human Cleric
+            5. Human Barbarian
+            6. Human Paladin
+            7. Elf Ranger
+            8. Elf Wizard
+            9. Elf Rogue
+            10.Elf Druid
+            11. Half Elf Rogue
+            12. Half Elf Bard
+            13. Dwarf Fighter
+            14. Dwarf Cleric
+            15. Dwarf Barbarian
+            16. Halfling Rogue
+            17. Half orc Barbarian
+            18. Gnome Wizard
+
+!!!     Selected Race/Class combos
+            1. Human fighter: 
+                Gideon Godwin: (honorable fighter with a chisled jaw, and a huge greatsword. He fights for the common folk, and has generic commentary)
+            2. Human Paladin:  
+                Sir Laurenth ( a holy night who is steadfast in his resolve with God. Modeled after Strum Brightblade from the Dragonlance series )
+            3. Human monk: 
+                Timon of th Grey Path (does not wish to do harm unless absolutely necessary, the embodiment of true neutral alignment) 
+
+            4. Elf Druid: Tessa Silvermoon 
+                Sylvanath T'Thasalor ( An unaging melodramatic dwarf who reveres nature's cycle)
+            5. Elf Ranger: 
+                Andwen DarkBow (edgy lone ranger type. Hates monsters. Family was all killed off.  Dripping with edge)
+            6. Elf Wizard: 
+                Erindriel Uriberos (A great old wizard with a lust for knowledge. Sees himself as smarter than the rest of the world. read: arrogant)
+
+            7. Dwarf cleric:  
+                Jenny CragHammer (a stoic dwarf who reveres the forge god.  She is a champion for the common people, and smites the unholy with righteous fury)
+            8. Dwarf Barbarian:
+                Thibbledorf Gutbuster (a dwarf battlerager who has only 2 ideals: carnage and loyalty)
+            9. Dwarf Warlock:
+                Dronthir DarkForge(gets his powers from a demon of greed this makes Dronthir lust for gold and jewels ) 
+
+            10. Halfling Sorcerer: 
+                Johnny TiggleBottom (a wild magic Sorcerer who broke an ancient urn.  He is very all over the place, and not confident)
+            11. Halfling Bard:
+                Elizabeth Underburrough ( she plays a mean fiddle, and sees the world through a very optimistic lens)
+            12. Halfling Rogue
+                Arlan GlitterFingers (Best thief in his area. Loves a good challenge. Steals for the fun of it)
+
+Quote List
+    A list of filtered Quotes that is sorted into groupings based on contexts
 Later features
 
     generate custom catchphrase 
@@ -81,28 +215,21 @@ Later features
     Submit quotes
         Allows users to submit quotes to phrase-smith
 
-    Quote List 
-        Shows all quotes
-        Allows users to filter by  
-            class
-            Race
-            favorite 
-
-    Ability to do a selective filter
-        e.g. must be a 'Dwarf' and a 'Barbarian'
 
     Icons corresponding to each class/race next to each quote
 
     phrases
         Goals
         First Version
-            At least 10 phrases per search filter
+            At least 10 phrases per character
         Second Version
-            At least 20 phrases per search filter
-
-    Settings
+            At least 20 phrases per character
+    Filters
         Clear All button
-        Add Add button
-            concerns => this could be redundant based on how getFilteredPhrases in helpers.js is written
-
-    
+    Tutorial 
+        Walks users through process of using the app
+        Could be displayed below the page, or hidden in a settings menu
+    Routing
+        Allow users to share links that will bring up modes and tag selections  
+        e.g. www.phrasesmith.com/traditional/dwarf/barbarian/ will start with the tradtional tab open, and the dwarf barbarian tags selected
+    Settings menu
