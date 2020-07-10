@@ -1,6 +1,5 @@
 import React from 'react';
 import samplePhrases from '../samplePhrases';
-import { Button } from 'semantic-ui-react';
 
 class App extends React.Component {
   constructor(props) {
@@ -28,13 +27,7 @@ class App extends React.Component {
   }
 
   render() {
-    return (
-      <div>
-        <Button color="secondary" size="huge">
-          Click ME!
-        </Button>
-      </div>
-    );
+    return <div></div>;
   }
 }
 
