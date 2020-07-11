@@ -8,7 +8,7 @@ function Header(props) {
         variant="h3"
         component="h1"
         align="center"
-        style={{ fontFamily: 'cambria' }}
+        style={{ fontFamily: 'cambria', fontWeight: 'bold' }}
       >
         PHRASE SMITH
       </Typography>

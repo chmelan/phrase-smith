@@ -1,6 +1,15 @@
 import React from 'react';
 import samplePhrases from '../samplePhrases';
+import { createMuiTheme } from '@material-ui/core/styles';
+import { ThemeProvider } from '@material-ui/core/styles';
+import { amber } from '@material-ui/core/colors';
 import Header from './Header';
+
+const theme = createMuiTheme({
+  palette: {
+    primary: amber,
+  },
+});
 
 class App extends React.Component {
   constructor(props) {
@@ -28,7 +37,11 @@ class App extends React.Component {
   }
 
   render() {
-    return <Header />;
+    return (
+      <ThemeProvider theme={theme}>
+        <Header />
+      </ThemeProvider>
+    );
   }
 }
 
