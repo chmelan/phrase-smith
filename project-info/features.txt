@@ -20,7 +20,7 @@ Filter Menu
         Users can select any number of Contexts  
             Filters phrases to only show phrases that match any of the selected contexts
 
-         Contexts
+         Context
                 Insult 
                 Compliment
                 Shout
@@ -61,7 +61,7 @@ Filter Menu
         Users can select any number of Contexts  
             Filters phrases to only show phrases that match any of the selected contexts
 
-         Contexts
+         Context
                 Insult 
                 Compliment
                 Shout

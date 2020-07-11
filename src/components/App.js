@@ -1,5 +1,6 @@
 import React from 'react';
 import samplePhrases from '../samplePhrases';
+import Header from './Header';
 
 class App extends React.Component {
   constructor(props) {
@@ -27,7 +28,7 @@ class App extends React.Component {
   }
 
   render() {
-    return <div></div>;
+    return <Header />;
   }
 }
 
