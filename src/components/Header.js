@@ -3,7 +3,7 @@ import { AppBar, Typography } from '@material-ui/core';
 
 function Header(props) {
   return (
-    <AppBar>
+    <AppBar position="static">
       <Typography
         variant="h3"
         component="h1"

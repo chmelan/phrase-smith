@@ -7,10 +7,11 @@ Example Phrase
     {
     id: '01ECFPP6QVMK8R4SWC6P0Y9BFJ',
     phrase: 'By my beard!',
-    classes: ['Fighter', 'Barbarian'],
-    races: ['Dwarf'],
-    characters: ['Thibbledorf Gutbuster', 'Jenny Craghammer', 'Dronthir DarkForge', 'Gideon Godwin' ],
-    context: ['Shout'],
+    tags: {
+        classes: ['Fighter', 'Barbarian'],
+        races: ['Dwarf'],
+        characters: ['Thibbledorf Gutbuster', 'Jenny Craghammer', 'Dronthir DarkForge', 'Gideon Godwin' ],
+        context: ['Shout'], }
   },
 
 Filter Menu
