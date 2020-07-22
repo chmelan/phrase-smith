@@ -1,6 +1,6 @@
 import React from 'react';
 import samplePhrases from '../samplePhrases';
-import { Grid } from '@material-ui/core';
+import { Grid, BottomNavigation } from '@material-ui/core';
 import { createMuiTheme } from '@material-ui/core/styles';
 import { ThemeProvider } from '@material-ui/core/styles';
 import { amber, blueGrey } from '@material-ui/core/colors';
@@ -60,7 +60,7 @@ class App extends React.Component {
             />
           </Grid>
           <Grid item md>
-            <PhraseListPanel />
+            <PhraseListPanel filteredPhrases={this.state.filteredPhrases} />
           </Grid>
         </Grid>
       </ThemeProvider>
